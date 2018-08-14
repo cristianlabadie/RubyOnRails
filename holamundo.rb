@@ -5,10 +5,28 @@ posterior creamos el metodo saluda() el cual imprime un mensaje diciendo "Hola M
 class HolaMundo
 	def initialize()
 	end
+
+	#Creando metodo para imprimir con variable
+	def saludaVariable()
+		nombre = "hola mundo"
+		puts nombre #Imprime el "Hola mundo"		
+	end
+
+	#Creando metodo para imprimir 
 	def saluda()
-		puts "hola mundo" #Imprime el "Hola mundo"		
+		puts "hola mundo dos"
+	end
+
+	#Creando metodo de suma de enteros en base a variables
+	def sumar()
+		numeroUno = 1
+		numeroDos = 3
+
+		puts numeroUno + numeroDos
 	end
 #Creando el objeto de "HolaMundo"
 	objeto = HolaMundo.new()
 	objeto.saluda
+	objeto.saludaVariable
+	objeto.sumar
 	gets()
