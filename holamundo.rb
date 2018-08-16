@@ -60,11 +60,33 @@ class HolaMundo
 		numeroFloatUno = numeroFloatUno.to_f
 		puts numeroFloatUno + numeroFloatDos
 	end
+
+
+
+
+
+=begin
+	Comienzo de nuevo ciclo para concatenar cadenas de strings
+=end
+
+
+	def concadenar 
+		cadena = "hola"
+		cadena << "mundo xd" #el signo << agrega la cadena entre comillas a la variable cadena con el dato "hola"
+
+		cadenados = 2+1
+		cadena.concat(33) #otra forma de concadenar y el significado del numero 33 es un signo de exclamacion luego de la cadena ya concadenada previamente
+		print "Resultado de la suma de 2 mas 1 es #{cadenados} jaja brigido"
+		print "        "
+		print cadena 	
+	end
+
 end
 #Creando el objeto de "HolaMundo"
 	objeto = HolaMundo.new()
-	objeto.saluda
-	objeto.saludaVariable
-	objeto.sumar
-	objeto.sumarConversiones
+	#objeto.saluda
+	#objeto.saludaVariable
+	#objeto.sumar
+	#objeto.sumarConversiones
+	objeto.concadenar
 	gets()
