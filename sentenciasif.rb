@@ -24,7 +24,7 @@ def saluda()
 		puts "ta la caga"
 	end	
 end
-
+#Case basico
 def casos()
 	sustantivo = "fracasado"
 	respuesta = case sustantivo
@@ -34,8 +34,21 @@ def casos()
 	end
 end	
 
+#Ciclos 
+def ciclos()
+	for i in(1..10)
+		puts i		
+	end
+
+	puts "--------"
+
+	puts *(1..0)
+end	
+
+
 objeto = Sentencias.new()
 #objeto.saluda
-objeto.casos
+#objeto.casos
+objeto.ciclos
 gets
 end
