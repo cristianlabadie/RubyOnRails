@@ -25,7 +25,17 @@ def saluda()
 	end	
 end
 
+def casos()
+	sustantivo = "fracasado"
+	respuesta = case sustantivo
+	when "aprendiendo","intentandoAprender" then print "Estas aprendiendo a usar CASE!"
+	when "no lo estas intentando","fracasado" then print "losser"
+	else print "no andai ni cerca del sustantivo jaja"
+	end
+end	
+
 objeto = Sentencias.new()
-objeto.saluda
+#objeto.saluda
+objeto.casos
 gets
 end
